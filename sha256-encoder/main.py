@@ -11,6 +11,7 @@ class Transform:
 
 
 if __name__ == "__main__":
-    tfm = Transform("This is an example for hashing")
+    text = input("Text to be encrypted: ")
+    tfm = Transform(text)
     x = tfm.hashTo256()
-    print(x)
+    print("Text:", text, "\nEncrypted: ", x)
